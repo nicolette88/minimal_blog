@@ -5,13 +5,12 @@ sentence = input('irj be egy mondatot: ')
 # print(type(sentence))
 digits = 0
 letters = 0
-
 for char in sentence:
   if char.isdigit():
     digits += 1
-  char.isalpha():
+  if char.isalpha():
     letters += 1
-  
-print(f'betűk: {letters} számok: {digits}')
+
+print(f"betűk: {letters} számok: {digits}")
 
 print(sentence)

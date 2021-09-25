@@ -11,7 +11,7 @@ def valid_braces(string) -> bool:
     return False
   if len(string) % 2 != 0:
     return False
-    parentheses = {"{}", "[]", "()"}
+  parentheses = {"{}", "[]", "()"}
   while len(string) != 0:
     previous_length = len(string)
     for p in parentheses:
@@ -21,6 +21,6 @@ def valid_braces(string) -> bool:
   return True
 
 
-print(valid_braces("([)]"))
-print(valid_braces("(([]})"))
-print(valid_braces("(){()(([]))})"))
+print(valid_braces("([)]"))  # ❌
+print(valid_braces("([([])})"))  # ❌
+print(valid_braces("(){()(([]))}"))  # ✅
